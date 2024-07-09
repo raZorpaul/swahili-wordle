@@ -1,0 +1,45 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.guess-row {
+  display: flex;
+  gap: 5px;
+}
+
+.feedback-tile {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+}
+
+.feedback-tile.active {
+  border: 2px solid #4a4a4a;
+}
+
+.feedback-tile.🟩 {
+  background-color: #6aaa64;
+  color: white;
+}
+
+.feedback-tile.🟨 {
+  background-color: #c9b458;
+  color: white;
+}
+
+.feedback-tile.⬜ {
+  background-color: #787c7e;
+  color: white;
+}
+
+.feedback-tile:empty {
+  background-color: transparent;
+}
